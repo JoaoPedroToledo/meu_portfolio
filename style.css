@@ -289,11 +289,27 @@ ul {
   margin-bottom: 0;
 }
 
-.tecnologia-icon {
+.tecnologia-icon,
+.tecnologia-icon-fallback {
   width: 64px;
   height: 64px;
   margin-bottom: 16px;
+}
+
+.tecnologia-icon {
   object-fit: contain;
+}
+
+.tecnologia-icon-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border-radius: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .tecnologia-item h3 {
